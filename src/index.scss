@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #42567a;
+  --secondory-color: #3877ee;
+  --pink-color: #ef5da8;
+  --border-color: #e3e6ed;
+  --wrapper-pading: 80px;
+
+  @media (max-width: 1023px) {
+    --wrapper-pading: 20px;
+  }
+}
+
+body {
+  color: var(--primary-color);
+  font-size: 20px;
+
+  .wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--primary-color);
+
+  @media (max-width: 1023px) {
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 400;
+  color: var(--secondory-color);
+
+  @media (max-width: 1023px) {
+    font-size: 16px;
+  }
+}

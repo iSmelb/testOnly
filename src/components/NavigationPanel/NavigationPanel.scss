@@ -1,0 +1,38 @@
+.control_panel {
+  display: flex;
+
+  button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--control-button-color, var(--primary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .arrow_span {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+  }
+
+  [class*="nav_prev"] {
+    .arrow_span {
+      transform: rotate(45deg);
+    }
+  }
+
+  [class*="nav_next"] {
+    .arrow_span {
+      transform: rotate(225deg);
+    }
+  }
+
+  [class*="nav_disabled"] {
+    cursor: not-allowed;
+  }
+}
