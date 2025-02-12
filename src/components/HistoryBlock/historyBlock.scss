@@ -29,7 +29,7 @@
 
   .banner_slider {
     .swiper {
-      margin: 0 var(--wrapper-pading);
+      padding: 0 var(--wrapper-pading);
 
       &:before {
         content: "";
@@ -54,6 +54,14 @@
       padding-top: 20px;
       margin: 57px var(--wrapper-pading) 0;
       border-top: 1px solid var(--border-color);
+    }
+
+    .swiper {
+      padding: 0 var(--wrapper-pading);
+
+      @media (max-width: 1023px) {
+        padding: initial;
+      }
     }
   }
 
